@@ -27,6 +27,7 @@ export default class SingleStudent extends Component {
                 {studentInfo.campus && 
                     <div className="studentBody">
                          <h1  style={{margin: '10px 0 15px 0'}}> Welcome to student page for</h1><h1>{studentInfo.name}</h1>
+                        <img className="mug" src={`${studentInfo.image}`} />
                          <h3> This student studies at 
                              <Link to={`/campus/${studentInfo.campus.id}`}> {studentInfo.campus.name}</Link></h3>
                          <h3> The email address for the student is {studentInfo.email}</h3>
